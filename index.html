@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bruna Nunes - Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 <body>
-    
+    <header class="header-menu">
+        <div class="wrapper">
+            <div class="profile-title-content">
+                <img src="./resources/imgs/profile.jfif" class="profile" alt="Foto de Bruna Nunes" width="50" height="50">
+                <img src="./resources/imgs/logo-name.svg" width="146" height="26">
+            </div>
+            <nav class="header-menu-navigation">
+                <ul>
+                    <li><a href="#home">Ínicio</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                </ul>
+            </nav>
+            <div class="switches">
+                <div class="switch-language-content">
+                    <button type="button" name="switch-language" class="switch-language" id="switch-language">
+                        <img src="./resources/imgs/icons/icon-switch-language.svg" width="23" height="23" alt="">
+                        <span>PT</span>
+                    </button>
+                </div>
+                <div class="switch-theme-content">
+                    <input id="switch-theme" type="checkbox" class="switch-theme">
+                    <label for="switch-theme"></label>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
