@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -159,4 +160,70 @@ body {
     display: flex;
     gap: 16px;
     align-items: center;
+}
+
+.about {
+    background: rgba(251, 186, 164, 0.60);
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 48px 56px;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .container h2.title {
+    font-size: 28px;
+    color: #2C171C;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+
+.about .container .content {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.about .container .content .who-am-i {
+    max-width: 50%;
+}
+
+.about .container .content .skills-and-experiences {
+    max-width: 30%;
+}
+
+.about .container .content h3.title {
+    font-size: 24px;
+    color: #894934;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.about .container .content p.description {
+    font-size: 20px;
+    color: #3D2B33;
+    font-weight: 300;
+    max-width: 580px;
+}
+
+.about .container .content .skills-and-experiences .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.about .container .content .skills-and-experiences .badges span {
+    height: 40px;
+    background-color: #FFECE5;
+    border-radius: 8px;
+    color: #3D2B33;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 12px;
 }
