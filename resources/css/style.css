@@ -122,3 +122,41 @@ body {
 .header-menu .wrapper .switches .switch-theme-content .switch-theme:checked + label:after {
     transform: translateX(30px);
 }
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../imgs/bg-pattern-hero.svg');
+    background-color: #FBBAA4;
+    background-size: cover;
+    height: 90vh;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .container .title {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #2C171C;
+    font-weight: 700;
+}
+
+.hero .container .description {
+    font-size: 24px;
+    color: #2C171C;
+    font-weight: 400;
+    text-align: center;
+    width: 54vw;
+}
+
+.hero .container .socials {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
