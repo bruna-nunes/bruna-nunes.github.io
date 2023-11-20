@@ -1,0 +1,114 @@
+.header-menu {
+    background-color: #FBBAA4;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+
+        .profile-title-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-right: auto;
+
+            img.profile {
+                border-radius: 50%;
+            }
+        }
+
+        .header-menu-navigation ul {
+            list-style: none;
+            display: flex;
+            gap: 42px;
+
+            li a {
+                text-decoration: none;
+                color: $font-color-dark;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+
+        .switches {
+            display: flex;
+            gap: 24px;
+
+            .switch-language-content { 
+                
+                .switch-language { 
+                    width: 78px;
+                    height: 36px;
+                    border-radius: 8px;
+                    background-color: rgba(44, 23, 28, 0.16);
+                    color: $font-color-dark;
+                    border: none;
+                    font-size: 18px;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                }
+            }
+
+            .switch-theme-content {
+                .switch-theme {
+                    position: absolute;
+                    margin-left: -999px;
+                    visibility: hidden;
+
+                    & + label {
+                        display: block;
+                        position: relative;
+                        cursor: pointer;
+                        outline: none;
+                        user-select: none;
+                    
+                        width: 62px;
+                        height: 32px;
+                        background-color: $font-color-dark;
+                        padding: 2px;
+                        border-radius: 100px;
+                    }
+
+                    & + label:before,
+                    & + label:after {
+                        display: block;
+                        position: absolute;
+                        top: 2px;
+                        left: 2px;
+                        bottom: 2px;
+                        content: '';
+                    }
+
+                    & + label:before {
+                        right: 2px;
+                        background-color: $font-color-dark;
+                        border-radius: 100px;
+                        transition: all 0.4s;
+                    }
+
+                    & + label:after {
+                        width: 28px;
+                        background-color: #FBBAA4;
+                        border-radius: 100%;
+                        transition: all 0.4s;
+                    }
+
+                    &:checked + label:before {
+                        background-color: white;
+                    }
+
+                    &:checked + label:after {
+                        transform: translateX(30px);
+                    }
+                }
+            }
+        }
+    }
+}

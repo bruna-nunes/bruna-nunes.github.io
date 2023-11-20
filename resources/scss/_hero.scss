@@ -1,0 +1,38 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../imgs/bg-pattern-hero.svg');
+    background-color: $background-color-03;
+    background-size: cover;
+    height: 95vh;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            font-size: 48px;
+            text-transform: uppercase;
+            color: $font-color-dark;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .description {
+            font-size: 24px;
+            color: $font-color-dark;
+            font-weight: 400;
+            text-align: center;
+            width: 54vw;
+        }
+
+        .socials {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-top: 28px;
+        }
+    }
+}

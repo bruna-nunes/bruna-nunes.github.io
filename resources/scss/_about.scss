@@ -1,0 +1,66 @@
+
+.about {
+    background: $background-color-02;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 48px 56px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2.title {
+            font-size: 28px;
+            color: $font-color-dark;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-bottom: 80px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+
+            .who-am-i {
+                max-width: 50%;
+            }
+
+            .skills-and-experiences {
+                max-width: 30%;
+
+                .badges {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 16px;
+
+                    span {
+                        height: 40px;
+                        background-color: $background-badges;
+                        border-radius: 8px;
+                        color: $font-color-default;
+                        font-size: 16px;
+                        font-weight: 400;
+                        padding: 8px 12px;
+                    }
+                }
+            }
+
+            h3.title {
+                font-size: 24px;
+                color: $font-color-light;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            p.description {
+                font-size: 20px;
+                color: $font-color-default;
+                font-weight: 300;
+                max-width: 580px;
+            }
+        }
+    }
+}

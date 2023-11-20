@@ -1,0 +1,19 @@
+{
+  "name": "bruna-nunes-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Bruna Nunes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --no-source-map --watch --update --style=expanded resources/scss:resources/css",
+    "sass-prod": "sass --style=compressed resources/scss:resources/css"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "bruna-nunes",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
