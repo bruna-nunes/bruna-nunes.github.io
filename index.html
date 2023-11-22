@@ -8,15 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/main.css">
+    <script src="./resources/js/index.js"></script>
 </head>
 <body>
     <header class="header-menu">
         <div class="wrapper">
             <div class="profile-title-content">
                 <img src="./resources/imgs/profile.jfif" class="profile" alt="Foto de Bruna Nunes" width="50" height="50">
-                <img src="./resources/imgs/logo-name.svg" width="146" height="26">
+                <img src="./resources/imgs/logo-name.svg" class="name" width="146" height="26">
             </div>
-            <nav class="header-menu-navigation">
+            <nav id="nav-menu-links" class="header-menu-navigation">
                 <ul>
                     <li><a href="#home">Ínicio</a></li>
                     <li><a href="#about">Sobre</a></li>
@@ -35,6 +36,9 @@
                     <label for="switch-theme"></label>
                 </div>
             </div>
+            <a id="mobile-menu-switch" href="javascript:void(0);" class="mobile-menu-switch" onclick="toggleMenuHeader()">
+                <img src="./resources/imgs/icons/hamburger-menu.svg" width="40" height="40">
+              </a>
         </div>
     </header>
     <main>

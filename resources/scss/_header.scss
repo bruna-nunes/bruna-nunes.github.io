@@ -9,6 +9,7 @@
         align-items: center;
         justify-content: center;
         gap: 48px;
+        position: relative;
 
         .profile-title-content {
             display: flex;
@@ -19,18 +20,71 @@
             img.profile {
                 border-radius: 50%;
             }
+
+            img.name {
+                
+                @media (max-width: 575.98px) {
+                    display: none;
+                }
+            }
         }
 
-        .header-menu-navigation ul {
-            list-style: none;
-            display: flex;
-            gap: 42px;
+        .header-menu-navigation {
 
-            li a {
-                text-decoration: none;
-                color: $font-color-dark;
-                font-size: 18px;
-                font-weight: 400;
+            // Medium devices (tablets, less than 992px)
+            @media (max-width: 991.98px) {
+                display: none;
+                position: absolute;
+                right: 60px;
+                top: 64px;
+                background-color: $background-color-02;
+                border-radius: 8px;
+                box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.075);
+            }
+
+            // Small devices (landscape phones, less than 768px)
+            @media (max-width: 767.98px) {
+                right: 0;
+                width: 100%;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                gap: 42px;
+                padding: 0;
+
+                 // Medium devices (tablets, less than 992px)
+                @media (max-width: 991.98px) {
+                    flex-direction: column;
+                    padding: 12px;
+                    gap: 24px;
+                }
+
+                // Small devices (landscape phones, less than 768px)
+                @media (max-width: 767.98px) {
+                    padding: 32px;
+                }
+    
+                li a {
+                    text-decoration: none;
+                    color: $font-color-dark;
+                    font-size: 18px;
+                    font-weight: 400;
+
+                     // Medium devices (tablets, less than 992px)
+                    @media (max-width: 991.98px) {
+                        padding: 0 24px 0 0;
+                    }
+
+                    // Small devices (landscape phones, less than 768px)
+                    @media (max-width: 767.98px) {
+                        display: block;
+                        width: 100%;
+                        padding-bottom: 12px;
+                        border-bottom: 1px solid $light-color-03;
+                    }
+                }
             }
         }
 
@@ -109,6 +163,15 @@
                     }
                 }
             }
+        }
+
+        .mobile-menu-switch {
+            display: none;
+
+            // Medium devices (tablets, less than 992px)
+            @media (max-width: 991.98px) {
+                display: block;
+             }
         }
     }
 }

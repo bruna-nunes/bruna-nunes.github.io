@@ -13,6 +13,11 @@ body {
     width: 100%;
     max-width: 1920px;
     padding: 0px 56px;
+
+     // Small devices (landscape phones, less than 768px)
+     @media (max-width: 767.98px) {
+        padding: 0px 40px;
+     }
 }
 
 @import './variables';

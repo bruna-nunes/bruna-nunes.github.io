@@ -4,10 +4,20 @@
     display: flex;
     align-items: center;
 
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+        min-height: 160px;
+    }
+
     .content {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        // Small devices (landscape phones, less than 768px)
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+        }
 
         p {
             display: flex;
@@ -15,10 +25,22 @@
             font-size: 20px;
             color: $font-color-default;
 
+            // Large devices (desktops, less than 1200px)
+            @media (max-width: 1199.98px) {
+                font-size: 18px;
+                text-align: center;
+                margin-bottom: 24px;
+            }
+
             span {
                 font-size: 18px;
                 font-weight: 600;
                 color: $font-color-default;
+
+                // Large devices (desktops, less than 1200px)
+                @media (max-width: 1199.98px) {
+                    font-size: 16px;
+                }
             }
         }
 

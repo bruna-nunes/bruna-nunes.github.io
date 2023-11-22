@@ -16,11 +16,17 @@
             text-transform: uppercase;
             font-weight: 500;
             margin-bottom: 80px;
+
+            // Small devices (landscape phones, less than 768px)
+            @media (max-width: 767.98px) {
+               margin-bottom: 40px;
+            }
         }
 
         .cards {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 40px;
 
             .card {
@@ -30,7 +36,13 @@
                 border: 1px solid #FDD6C8;
                 border-left: 4px solid #FDD6C8;
                 height: 270px;
-                width: 40%;
+                max-width: 620px;
+
+                 // Small devices (landscape phones, less than 768px)
+                @media (max-width: 767.98px) {
+                    flex-direction: column;
+                    height: auto;
+                }
 
                 .card-content {
                     display: flex;
@@ -38,6 +50,20 @@
                     padding: 20px 24px;
                     max-width: 60%;
                     gap: 20px;
+
+                    // Small devices (landscape phones, less than 768px)
+                    @media (max-width: 767.98px) {
+                        max-width: 100%;
+                        order: 2;
+                    }
+
+                    h3.project-title {
+                        font-size: 24px;
+                    }
+
+                    .project-description {
+                        font-size: 16px;
+                    }
                 }
 
                 img {
@@ -45,6 +71,7 @@
                     height: auto;
                     border-radius: 10px;
                     border: 1px solid #FDD6C8;
+                    max-width: 100%;
                 }
             }
         }

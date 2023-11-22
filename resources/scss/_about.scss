@@ -6,6 +6,11 @@
     justify-content: center;
     padding: 48px 56px;
 
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+       padding: 48px 0;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -17,6 +22,11 @@
             text-transform: uppercase;
             font-weight: 500;
             margin-bottom: 80px;
+
+            // Small devices (landscape phones, less than 768px)
+            @media (max-width: 767.98px) {
+               margin-bottom: 40px;
+            }
         }
 
         .content {
@@ -24,12 +34,33 @@
             justify-content: center;
             gap: 100px;
 
+             // Small devices (landscape phones, less than 768px)
+             @media (max-width: 767.98px) {
+                flex-direction: column;
+                gap: 40px;
+             }
+
             .who-am-i {
                 max-width: 50%;
+
+                 // Small devices (landscape phones, less than 768px)
+                @media (max-width: 767.98px) {
+                    max-width: 100%;
+                }
             }
 
             .skills-and-experiences {
                 max-width: 30%;
+
+               // Large devices (desktops, less than 1200px)
+                @media (max-width: 1199.98px) {
+                    max-width: 35%;
+                }
+
+                 // Small devices (landscape phones, less than 768px)
+                @media (max-width: 767.98px) {
+                    max-width: 100%;
+                }
 
                 .badges {
                     display: flex;
@@ -44,6 +75,12 @@
                         font-size: 16px;
                         font-weight: 400;
                         padding: 8px 12px;
+
+                        // Large devices (desktops, less than 1200px)
+                        @media (max-width: 1199.98px) {
+                            height: 34px;
+                            font-size: 14px;
+                        }
                     }
                 }
             }
@@ -60,6 +97,11 @@
                 color: $font-color-default;
                 font-weight: 300;
                 max-width: 580px;
+
+                // Large devices (desktops, less than 1200px)
+                @media (max-width: 1199.98px) {
+                    font-size: 16px;
+                }
             }
         }
     }
