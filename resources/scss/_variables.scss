@@ -1,14 +1,39 @@
-$background-color-01: #FFF7F4;
-$background-color-02: #FDD6C8;
-$background-color-03: #FBBAA4;
+:root {
+    --background-hero: url('../imgs/bg-pattern-hero-light.svg');
+    --background-color-01: #FFF7F4;
+    --background-color-02: #FDD6C8;
+    --background-color-03: #FBBAA4;
+    
+    --font-color-dark: #2C171C;
+    --font-color-default: #3D2B33;
+    --font-color-light: #894934;
+    
+    --background-badges: #FFECE5;
 
-$font-color-dark: #2C171C;
-$font-color-default: #3D2B33;
-$font-color-light: #894934;
+    --background-switch-language: rgba(44, 23, 28, 0.16);
+    
+    --main-dark-color: #2C171C;
+    --light-color-01: #FFF7F4;
+    --light-color-02: #FDD6C8;
+    --light-color-03: #FBBAA4; 
+}
 
-$background-badges: #FFECE5;
+.dark-mode:root {
+    --background-hero: url('../imgs/bg-pattern-hero-dark.svg');
+    --background-color-01: #3C232A;
+    --background-color-02: #351B22;
+    --background-color-03: #2C171C;
+    
+    --font-color-dark: #FBBAA4;
+    --font-color-default: #FFF7F4;
+    --font-color-light: #FBBAA4;
+    
+    --background-badges: #2C171C;
 
-$main-dark-color: #2C171C;
-$light-color-01: #FFF7F4;
-$light-color-02: #FDD6C8;
-$light-color-03: #FBBAA4; 
+    --background-switch-language: rgba(251, 186, 164, 0.16);
+    
+    --main-dark-color: #FBBAA4;
+    --light-color-01: #0a0908;
+    --light-color-02: #351B22;
+    --light-color-03: #FBBAA4;
+}

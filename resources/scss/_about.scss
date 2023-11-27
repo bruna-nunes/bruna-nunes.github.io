@@ -1,6 +1,6 @@
 
 .about {
-    background: $background-color-02;
+    background: var(--background-color-02);
     min-height: 500px;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@
 
         h2.title {
             font-size: 28px;
-            color: $font-color-dark;
+            color: var(--font-color-dark);
             text-transform: uppercase;
             font-weight: 500;
             margin-bottom: 80px;
@@ -69,9 +69,9 @@
 
                     span {
                         height: 40px;
-                        background-color: $background-badges;
+                        background-color: var(--background-badges);
                         border-radius: 8px;
-                        color: $font-color-default;
+                        color: var(--font-color-default);
                         font-size: 16px;
                         font-weight: 400;
                         padding: 8px 12px;
@@ -87,14 +87,14 @@
 
             h3.title {
                 font-size: 24px;
-                color: $font-color-light;
+                color: var(--font-color-light);
                 font-weight: 500;
                 margin-bottom: 20px;
             }
 
             p.description {
                 font-size: 20px;
-                color: $font-color-default;
+                color: var(--font-color-default);
                 font-weight: 300;
                 max-width: 580px;
 

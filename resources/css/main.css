@@ -20,8 +20,40 @@ body {
   }
 }
 
+:root {
+  --background-hero: url("../imgs/bg-pattern-hero-light.svg");
+  --background-color-01: #FFF7F4;
+  --background-color-02: #FDD6C8;
+  --background-color-03: #FBBAA4;
+  --font-color-dark: #2C171C;
+  --font-color-default: #3D2B33;
+  --font-color-light: #894934;
+  --background-badges: #FFECE5;
+  --background-switch-language: rgba(44, 23, 28, 0.16);
+  --main-dark-color: #2C171C;
+  --light-color-01: #FFF7F4;
+  --light-color-02: #FDD6C8;
+  --light-color-03: #FBBAA4;
+}
+
+.dark-mode:root {
+  --background-hero: url("../imgs/bg-pattern-hero-dark.svg");
+  --background-color-01: #3C232A;
+  --background-color-02: #351B22;
+  --background-color-03: #2C171C;
+  --font-color-dark: #FBBAA4;
+  --font-color-default: #FFF7F4;
+  --font-color-light: #FBBAA4;
+  --background-badges: #2C171C;
+  --background-switch-language: rgba(251, 186, 164, 0.16);
+  --main-dark-color: #FBBAA4;
+  --light-color-01: #0a0908;
+  --light-color-02: #351B22;
+  --light-color-03: #FBBAA4;
+}
+
 .header-menu {
-  background-color: #FBBAA4;
+  background-color: var(--background-color-03);
   height: 60px;
   display: flex;
   justify-content: center;
@@ -53,7 +85,7 @@ body {
     position: absolute;
     right: 60px;
     top: 64px;
-    background-color: #FDD6C8;
+    background-color: var(--background-color-02);
     border-radius: 8px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.075);
   }
@@ -84,7 +116,7 @@ body {
 }
 .header-menu .wrapper .header-menu-navigation ul li a {
   text-decoration: none;
-  color: #2C171C;
+  color: var(--font-color-dark);
   font-size: 18px;
   font-weight: 400;
 }
@@ -98,7 +130,7 @@ body {
     display: block;
     width: 100%;
     padding-bottom: 12px;
-    border-bottom: 1px solid #FBBAA4;
+    border-bottom: 1px solid var(--light-color-03);
   }
 }
 .header-menu .wrapper .switches {
@@ -109,8 +141,8 @@ body {
   width: 78px;
   height: 36px;
   border-radius: 8px;
-  background-color: rgba(44, 23, 28, 0.16);
-  color: #2C171C;
+  background-color: var(--background-switch-language);
+  color: var(--font-color-dark);
   border: none;
   font-size: 18px;
   font-weight: 400;
@@ -132,7 +164,7 @@ body {
   user-select: none;
   width: 62px;
   height: 32px;
-  background-color: #2C171C;
+  background-color: var(--font-color-dark);
   padding: 2px;
   border-radius: 100px;
 }
@@ -146,18 +178,18 @@ body {
 }
 .header-menu .wrapper .switches .switch-theme-content .switch-theme + label:before {
   right: 2px;
-  background-color: #2C171C;
+  background-color: var(--font-color-dark);
   border-radius: 100px;
   transition: all 0.4s;
 }
 .header-menu .wrapper .switches .switch-theme-content .switch-theme + label:after {
   width: 28px;
-  background-color: #FBBAA4;
+  background-color: var(--background-color-03);
   border-radius: 100%;
   transition: all 0.4s;
 }
 .header-menu .wrapper .switches .switch-theme-content .switch-theme:checked + label:before {
-  background-color: white;
+  background-color: var(--main-dark-color);
 }
 .header-menu .wrapper .switches .switch-theme-content .switch-theme:checked + label:after {
   transform: translateX(30px);
@@ -175,8 +207,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../imgs/bg-pattern-hero.svg");
-  background-color: #FBBAA4;
+  background-image: var(--background-hero);
+  background-color: var(--background-color-03);
   background-size: cover;
   height: 95vh;
 }
@@ -188,7 +220,7 @@ body {
 .hero .container .title {
   font-size: 48px;
   text-transform: uppercase;
-  color: #2C171C;
+  color: var(--font-color-dark);
   font-weight: 700;
   margin-bottom: 12px;
 }
@@ -205,7 +237,7 @@ body {
 }
 .hero .container .description {
   font-size: 24px;
-  color: #2C171C;
+  color: var(--font-color-dark);
   font-weight: 400;
   text-align: center;
   width: 54vw;
@@ -228,7 +260,7 @@ body {
 }
 
 .about {
-  background: #FDD6C8;
+  background: var(--background-color-02);
   min-height: 500px;
   display: flex;
   justify-content: center;
@@ -246,7 +278,7 @@ body {
 }
 .about .container h2.title {
   font-size: 28px;
-  color: #2C171C;
+  color: var(--font-color-dark);
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 80px;
@@ -295,9 +327,9 @@ body {
 }
 .about .container .content .skills-and-experiences .badges span {
   height: 40px;
-  background-color: #FFECE5;
+  background-color: var(--background-badges);
   border-radius: 8px;
-  color: #3D2B33;
+  color: var(--font-color-default);
   font-size: 16px;
   font-weight: 400;
   padding: 8px 12px;
@@ -310,13 +342,13 @@ body {
 }
 .about .container .content h3.title {
   font-size: 24px;
-  color: #894934;
+  color: var(--font-color-light);
   font-weight: 500;
   margin-bottom: 20px;
 }
 .about .container .content p.description {
   font-size: 20px;
-  color: #3D2B33;
+  color: var(--font-color-default);
   font-weight: 300;
   max-width: 580px;
 }
@@ -327,7 +359,7 @@ body {
 }
 
 .projects {
-  background: #FFF7F4;
+  background: var(--background-color-01);
   min-height: 500px;
   display: flex;
   justify-content: center;
@@ -340,7 +372,7 @@ body {
 }
 .projects .container h2.title {
   font-size: 28px;
-  color: #2C171C;
+  color: var(--font-color-dark);
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 80px;
@@ -360,8 +392,8 @@ body {
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
-  border: 1px solid #FDD6C8;
-  border-left: 4px solid #FDD6C8;
+  border: 1px solid var(--light-color-03);
+  border-left: 4px solid var(--light-color-03);
   height: 270px;
   max-width: 620px;
 }
@@ -386,20 +418,22 @@ body {
 }
 .projects .container .cards .card .card-content h3.project-title {
   font-size: 24px;
+  color: var(--font-color-dark);
 }
 .projects .container .cards .card .card-content .project-description {
   font-size: 16px;
+  color: var(--font-color-default);
 }
 .projects .container .cards .card img {
   width: auto;
   height: auto;
   border-radius: 10px;
-  border: 1px solid #FDD6C8;
+  border: 1px solid var(--light-color-01);
   max-width: 100%;
 }
 
 .main-footer {
-  background-color: #FBBAA4;
+  background-color: var(--background-color-03);
   min-height: 120px;
   display: flex;
   align-items: center;
@@ -423,7 +457,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 20px;
-  color: #3D2B33;
+  color: var(--font-color-default);
 }
 @media (max-width: 1199.98px) {
   .main-footer .content p {
@@ -435,7 +469,7 @@ body {
 .main-footer .content p span {
   font-size: 18px;
   font-weight: 600;
-  color: #3D2B33;
+  color: var(--font-color-default);
 }
 @media (max-width: 1199.98px) {
   .main-footer .content p span {

@@ -1,5 +1,5 @@
 .main-footer {
-    background-color: #FBBAA4;
+    background-color: var(--background-color-03);
     min-height: 120px;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
             display: flex;
             flex-direction: column;
             font-size: 20px;
-            color: $font-color-default;
+            color: var(--font-color-default);
 
             // Large devices (desktops, less than 1200px)
             @media (max-width: 1199.98px) {
@@ -35,7 +35,7 @@
             span {
                 font-size: 18px;
                 font-weight: 600;
-                color: $font-color-default;
+                color: var(--font-color-default);
 
                 // Large devices (desktops, less than 1200px)
                 @media (max-width: 1199.98px) {

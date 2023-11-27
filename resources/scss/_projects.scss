@@ -1,5 +1,5 @@
 .projects {
-    background: $background-color-01;
+    background: var(--background-color-01);
     min-height: 500px;
     display: flex;
     justify-content: center;
@@ -12,7 +12,7 @@
 
         h2.title {
             font-size: 28px;
-            color: $font-color-dark;
+            color: var(--font-color-dark);
             text-transform: uppercase;
             font-weight: 500;
             margin-bottom: 80px;
@@ -33,8 +33,8 @@
                 display: flex;
                 justify-content: space-between;
                 border-radius: 10px;
-                border: 1px solid #FDD6C8;
-                border-left: 4px solid #FDD6C8;
+                border: 1px solid var(--light-color-03);
+                border-left: 4px solid var(--light-color-03);
                 height: 270px;
                 max-width: 620px;
 
@@ -59,10 +59,12 @@
 
                     h3.project-title {
                         font-size: 24px;
+                        color: var(--font-color-dark);
                     }
 
                     .project-description {
                         font-size: 16px;
+                        color: var(--font-color-default);
                     }
                 }
 
@@ -70,7 +72,7 @@
                     width: auto;
                     height: auto;
                     border-radius: 10px;
-                    border: 1px solid #FDD6C8;
+                    border: 1px solid var(--light-color-01);;
                     max-width: 100%;
                 }
             }
