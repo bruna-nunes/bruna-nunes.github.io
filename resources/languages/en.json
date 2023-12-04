@@ -1,0 +1,27 @@
+{
+    "language": "EN",
+    "menu_header_home": "Home",
+    "menu_header_about": "About",
+    "menu_header_projects": "Projects",
+    "hero_title": "Hello there, I'm Bruna",
+    "hero_description": "Frontend Developer, passionate about transforming codes into engaging, creative, scalable and accessible visual experiences :)",
+    "about_title": "About me",
+    "about_title_who": "Who (and what) I am",
+    "about_title_technologies": "Technologies and experiences",
+    "about_description": "Frontend Web Developer.<br>Graduated in Systems Analysis and Development and with experience in building and maintaining the frontend of different digital products, websites, landing pages, platforms and web systems.<br>Focused on modern and consistent technologies and construction of relevant and interactive experiences.<br>Professional in search of constant improvement, day by day.",
+    "projects_title": "Projects",
+    "project_dashboard_title": "Informative Dashboard",
+    "project_dashboard_description": "Social Media Dashboard Interface created to solve a challenge from <a href='https://www.frontendmentor.io/' rel='noreferrer noopener' target='_blank'>Frontendmentor</a>",
+    "project_lp_title": "Landing page Fylo",
+    "project_lp_description": "Landing page with dark theme created to solve a challenge from <a href='https://www.frontendmentor.io/' rel='noreferrer noopener' target='_blank'>Frontendmentor</a>",
+    "role": "Frontend Developer",
+
+    "alt_photo_header": "Photo of Bruna Nunes",
+    "alt_logo_header": "Logo with the name Bruna Nunes",
+    "alt_photo_hero": "Illustration of Bruna Nunes",
+    "alt_linkedin": "Go to LinkedIn",
+    "alt_github": "Go to GitHub",
+    "alt_email": "Send an email",
+    "alt_project_dashboard": "Demonstrative image of the Dashboard Project",
+    "alt_project_lp": "Demonstrative image of the Landing Page Project"
+}

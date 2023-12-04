@@ -1,11 +1,19 @@
-document.addEventListener('DOMContentLoaded', function(event) {
+document.addEventListener('DOMContentLoaded', async () => {
+
+    const userPreferredLanguage = localStorage.getItem('language') || 'pt';
+    const langData = await fetchLanguageData(userPreferredLanguage);
+    updateContent(userPreferredLanguage, langData);
+
     const htmlPage = document.querySelector('html');
     const switcher = document.querySelector('#switch-theme');
 
     switcher.addEventListener('change', function(){
     const isDarkMode = htmlPage.classList.toggle('dark-mode') ? 'dark' : 'light'
     changeAssets(isDarkMode); 
+
+    
 })});
+
 
 function changeAssets(mode) {
     const nameLogo = document.querySelector('[data-observable-mode="name"]')
@@ -40,4 +48,45 @@ function toggleMenuHeader() {
     } else {
         navLinks.style.display = 'block';
     }
-  }
+}
+
+function toggleLangSwitchVisibility(){
+    var languagesContent = document.getElementById('langs-content');
+    if (languagesContent.style.display === 'flex') {
+        languagesContent.style.display = 'none';
+    } else {
+        languagesContent.style.display = 'flex';
+    }
+}
+
+function updateContent(lang, langData) {
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const config = JSON.parse(element.getAttribute('data-i18n'));
+        if (config.typeKey) {
+            if (config.typeKey === "alt"){
+                element.alt = langData[config.key]
+            }
+        } else {
+            element.innerHTML = langData[config.key];
+        }
+    });
+
+    document.querySelector('html').lang = lang
+}
+
+function setLanguagePreference(lang) {
+    localStorage.setItem('language', lang);
+    location.reload();
+}
+
+async function fetchLanguageData(lang) {
+    const response = await fetch(`/resources/languages/${lang}.json`);
+    return response.json();
+}
+
+async function changeLanguage(lang) {
+    await setLanguagePreference(lang);
+    
+    const langData = await fetchLanguageData(lang);
+    updateContent(lang, langData);
+}
