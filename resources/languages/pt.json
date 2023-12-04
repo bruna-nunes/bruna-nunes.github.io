@@ -1,0 +1,27 @@
+{
+    "language": "PT",
+    "menu_header_home": "Ínicio",
+    "menu_header_about": "Sobre",
+    "menu_header_projects": "Projetos",
+    "hero_title": "Olá, eu sou a Bruna",
+    "hero_description": "Desenvolvedora Frontend, apaixonada por transformar códigos em experiências visuais envolventes, criativas, escaláveis e acessíveis :)",
+    "about_title": "Sobre mim",
+    "about_title_who": "Quem (e o que) sou",
+    "about_title_technologies": "Tecnologias e experiências",
+    "about_description": "Desenvolvedora Web Frontend.<br>Formada em Análise e Desenvolvimento de Sistemas e com experiência na construção e manutenção do frontend de diferentes produtos digitais, sites, landing pages, plataformas e sistemas web.<br>Focada em tecnologias modernas e consistentes e na construção de experiências relevantes e interativas.<br>Profissional em busca da melhoria constante, dia após dia.",
+    "projects_title": "Projetos",
+    "project_dashboard_title": "Dashboard informativo",
+    "project_dashboard_description": "Interface de Dashboard de Social Media criada como resolução de um desafio do <a href='https://www.frontendmentor.io/' rel='noreferrer noopener' target='_blank'>Frontendmentor</a>",
+    "project_lp_title": "Landing page Fylo",
+    "project_lp_description": "Landing page com dark theme criada como resolução de um desafio do <a href='https://www.frontendmentor.io/' rel='noreferrer noopener' target='_blank'>Frontendmentor</a>",
+    "role": "Desenvolvedora Frontend",
+
+    "alt_photo_header": "Foto de Bruna Nunes",
+    "alt_logo_header": "Logo com o nome Bruna Nunes",
+    "alt_photo_hero": "Ilustração de Bruna Nunes",
+    "alt_linkedin": "Ir para o LinkedIn",
+    "alt_github": "Ir para o GitHub",
+    "alt_email": "Enviar email",
+    "alt_project_dashboard": "Imagem demonstrativa do Projeto de Dashboard",
+    "alt_project_lp": "Imagem demonstrativa do Projeto de Landing Page"
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruna Nunes - Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/main.css">
+    <script src="./resources/js/index.js"></script>
+</head>
+<body>
+    <header class="header-menu">
+        <div class="wrapper">
+            <div class="profile-title-content">
+                <img src="./resources/imgs/profile.jfif" class="profile" data-i18n='{ "key": "alt_photo_header", "typeKey": "alt" }' width="50" height="50">
+                <img src="./resources/imgs/logo-name-light.svg" class="name" width="146" height="26" data-observable-mode="name" aria-hidden="true" data-i18n='{ "key": "alt_logo_header", "typeKey": "alt" }'>
+            </div>
+            <nav id="nav-menu-links" class="header-menu-navigation">
+                <ul>
+                    <li><a href="#home" data-i18n='{ "key": "menu_header_home" }'></a></li>
+                    <li><a href="#about" data-i18n='{ "key": "menu_header_about" }'></a></li>
+                    <li><a href="#projects" data-i18n='{ "key": "menu_header_projects" }'></a></li>
+                </ul>
+            </nav>
+            <div class="switches">
+                <div class="switch-language-content">
+                    <button type="button" onclick="toggleLangSwitchVisibility()" name="switch-language" class="switch-language" id="switch-language">
+                        <img src="./resources/imgs/icons/icon-switch-language-light.svg" width="23" height="23" alt="" data-observable-mode="switch-language-icon">
+                        <span data-i18n='{ "key": "language" }'></span>
+                    </button>
+                    <div class="languages" id="langs-content">
+                        <button type="button" onclick="changeLanguage('pt')">Português</button>
+                        <button type="button" onclick="changeLanguage('en')">English</button>  
+                    </div>
+                </div>
+                <div class="switch-theme-content">
+                    <input id="switch-theme" type="checkbox" class="switch-theme">
+                    <label for="switch-theme"></label>
+                </div>
+            </div>
+            <a id="mobile-menu-switch" href="javascript:void(0);" class="mobile-menu-switch" onclick="toggleMenuHeader()">
+                <img src="./resources/imgs/icons/hamburger-menu-light.svg" width="40" height="40" data-observable-mode="switch-hamburguer-menu-icon">
+              </a>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container wrapper">
+                <img src="./resources/imgs/image-hero-bruna-light.svg" width="138" height="138" data-i18n='{ "key": "alt_photo_hero", "typeKey": "alt" }' data-observable-mode="profile-hero">
+                <h1 class="title" data-i18n='{ "key": "hero_title" }'></h1>
+                <p class="description" data-i18n='{ "key": "hero_description" }'>
+                </p>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/bruna-gnunes/" rel="noreferrer noopener" target="_blank">
+                        <img src="./resources/imgs/icons/icon-linkedin-light.svg" width="32" height="32" data-i18n='{ "key": "alt_linkedin", "typeKey": "alt" }' data-observable-mode="linkedin">
+                    </a>
+                    <a href="https://github.com/bruna-nunes" rel="noreferrer noopener" target="_blank">
+                        <img src="./resources/imgs/icons/icon-github-light.svg"  width="38" height="38" data-i18n='{ "key": "alt_github", "typeKey": "alt" }' data-observable-mode="github">
+                    </a>
+                    <a href="mailto:brunanunes997@gmail.com" rel="noreferrer noopener" target="_blank">
+                        <img src="./resources/imgs/icons/icon-email-light.svg" width="36" height="32" data-i18n='{ "key": "alt_email", "typeKey": "alt" }' data-observable-mode="email"> 
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container wrapper">
+                <h2 class="title" data-i18n='{ "key": "about_title" }'></h2>
+                <section class="content">
+                    <section class="who-am-i">
+                        <h3 class="title" data-i18n='{ "key": "about_title_who" }'></h3>
+                        <p class="description"  data-i18n='{ "key": "about_description" }'>
+                        </p>
+                    </section>
+                    <section class="skills-and-experiences">
+                        <h3 class="title" data-i18n='{ "key": "about_title_technologies" }'></h3>
+                        <div class="badges">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>VueJS</span>
+                            <span>Rest API</span>
+                            <span>GIT/GitHub</span>
+                            <span>PHP</span>
+                            <span>Wodpress</span>
+                            <span>SASS/SCSS</span>
+                            <span>Bootstrap</span>
+                            <span>Web components</span>
+                            <span>Figma</span>
+                        </div>
+                        
+                    </section>
+                </section>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="container wrapper">
+                <h2 class="title" data-i18n='{ "key": "projects_title" }'></h2>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-content">
+                            <a class="project-title" href="https://bruna-nunes.github.io/frontendmentor/desafio-03/" target='_blank'><h3 data-i18n='{ "key": "project_dashboard_title" }'></h3></a>
+                            <p class="project-description"  data-i18n='{ "key": "project_dashboard_description" }'>
+                            </p>
+                        </div>
+                        <img src="./resources/imgs/projects/social-media-dashboard-frontendmentor-project.jpg" width="200" height="200" data-i18n='{ "key": "alt_project_dashboard", "typeKey": "alt" }'>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <a class="project-title" href="https://bruna-nunes.github.io/frontendmentor/desafio-04/" target='_blank'><h3 class="project-title" data-i18n='{ "key": "project_lp_title" }'></h3></a>
+                            <p class="project-description" data-i18n='{ "key": "project_lp_description" }'>
+                            </p>
+                        </div>
+                        <img src="./resources/imgs/projects/fylo-landing-page-frontendmentor.jpg" width="200" height="200" data-i18n='{ "key": "alt_project_lp", "typeKey": "alt" }'>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="content wrapper">
+            <p>
+                <span class="name">Bruna Nunes</span>
+                <span data-i18n='{ "key": "role" }'></span>
+            </p>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/bruna-gnunes/" rel="noreferrer noopener" target="_blank">
+                    <img src="./resources/imgs/icons/icon-linkedin-light.svg" width="24" height="24" data-i18n='{ "key": "alt_linkedin", "typeKey": "alt" }' data-observable-mode="linkedin">
+                </a>
+                <a href="https://github.com/bruna-nunes" rel="noreferrer noopener" target="_blank">
+                    <img src="./resources/imgs/icons/icon-github-light.svg"  width="28" height="28" data-i18n='{ "key": "alt_github", "typeKey": "alt" }' data-observable-mode="github">
+                </a>
+                <a href="mailto:brunanunes997@gmail.com" rel="noreferrer noopener" target="_blank">
+                    <img src="./resources/imgs/icons/icon-email-light.svg" width="30" height="26" data-i18n='{ "key": "alt_email", "typeKey": "alt" }' data-observable-mode="email"> 
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

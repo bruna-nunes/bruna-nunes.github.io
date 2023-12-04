@@ -1,0 +1,81 @@
+.projects {
+    background: var(--background-color-01);
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 48px 0px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2.title {
+            font-size: 28px;
+            color: var(--font-color-dark);
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-bottom: 80px;
+
+            // Small devices (landscape phones, less than 768px)
+            @media (max-width: 767.98px) {
+               margin-bottom: 40px;
+            }
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+
+            .card {
+                display: flex;
+                justify-content: space-between;
+                border-radius: 10px;
+                border: 1px solid var(--light-color-03);
+                border-left: 4px solid var(--light-color-03);
+                height: 270px;
+                max-width: 620px;
+
+                 // Small devices (landscape phones, less than 768px)
+                @media (max-width: 767.98px) {
+                    flex-direction: column;
+                    height: auto;
+                }
+
+                .card-content {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 24px;
+                    max-width: 60%;
+                    gap: 20px;
+
+                    // Small devices (landscape phones, less than 768px)
+                    @media (max-width: 767.98px) {
+                        max-width: 100%;
+                        order: 2;
+                    }
+
+                    a.project-title {
+                        font-size: 24px;
+                        color: var(--font-color-dark);
+                    }
+
+                    .project-description {
+                        font-size: 16px;
+                        color: var(--font-color-default);
+                    }
+                }
+
+                img {
+                    width: auto;
+                    height: auto;
+                    border-radius: 10px;
+                    border: 1px solid var(--light-color-01);;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

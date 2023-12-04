@@ -1,0 +1,63 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--background-hero);
+    background-color: var(--background-color-03);
+    background-size: cover;
+    height: 95vh;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            font-size: 48px;
+            text-transform: uppercase;
+            color: var(--font-color-dark);
+            font-weight: 700;
+            margin-bottom: 12px;
+
+            // Large devices (desktops, less than 1200px)
+            @media (max-width: 1199.98px) {
+                font-size: 40px;
+            }
+
+            // Small devices (landscape phones, less than 768px)
+            @media (max-width: 767.98px) {
+               font-size: 36px;
+               text-align: center;
+            }
+        }
+
+        .description {
+            font-size: 24px;
+            color: var(--font-color-dark);
+            font-weight: 400;
+            text-align: center;
+            width: 54vw;
+
+            // Large devices (desktops, less than 1200px)
+            @media (max-width: 1199.98px) {
+                font-size: 20px;
+            }
+
+            // Small devices (landscape phones, less than 768px)
+             @media (max-width: 767.98px) {
+                width: 85vw;
+             }
+        }
+
+        .socials {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-top: 28px;
+
+            a:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
