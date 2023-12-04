@@ -54,6 +54,10 @@
             gap: 16px;
             align-items: center;
             margin-top: 28px;
+
+            a:hover {
+                transform: scale(1.1);
+            }
         }
     }
 }

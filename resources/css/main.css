@@ -1,14 +1,26 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  transition: all 1s;
 }
 
 body, button {
   padding: 0;
   margin: 0;
   font-family: "Lexend", sans-serif;
+  animation: fadeInAnimation ease-in-out 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .wrapper {
   width: 100%;
   max-width: 1920px;
@@ -284,6 +296,9 @@ body, button {
   align-items: center;
   margin-top: 28px;
 }
+.hero .container .socials a:hover {
+  transform: scale(1.1);
+}
 
 .about {
   background: var(--background-color-02);
@@ -504,4 +519,7 @@ body, button {
 }
 .main-footer .content .socials a {
   text-decoration: none;
+}
+.main-footer .content .socials a :hover {
+  transform: scale(1.1);
 }
