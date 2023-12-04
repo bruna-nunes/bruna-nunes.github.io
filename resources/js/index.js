@@ -1,21 +1,29 @@
 document.addEventListener('DOMContentLoaded', async () => {
 
-    const userPreferredLanguage = localStorage.getItem('language') || 'pt';
+    const userPreferredLanguage = localStorage.getItem('languagePortfolioBrunaNunes') || 'pt';
     const langData = await fetchLanguageData(userPreferredLanguage);
     updateContent(userPreferredLanguage, langData);
 
     const htmlPage = document.querySelector('html');
     const switcher = document.querySelector('#switch-theme');
 
-    switcher.addEventListener('change', function(){
-    const isDarkMode = htmlPage.classList.toggle('dark-mode') ? 'dark' : 'light'
-    changeAssets(isDarkMode); 
-
+    const userPreferredTheme = localStorage.getItem('themePortfolioBrunaNunes') || 'light';
+    if (userPreferredTheme === 'dark') {
+        htmlPage.classList.add('dark-mode')
+        changeAssets(userPreferredTheme)
+    }
     
-})});
+
+    switcher.addEventListener('change', function(){
+        const mode = htmlPage.classList.toggle('dark-mode') ? 'dark' : 'light'
+        setThemePreference(mode)
+        changeAssets(mode);    
+    })
+});
 
 
 function changeAssets(mode) {
+    console.log("mode", mode)
     const nameLogo = document.querySelector('[data-observable-mode="name"]')
     nameLogo.src = `./resources/imgs/logo-name-${mode}.svg`;
 
@@ -75,8 +83,12 @@ function updateContent(lang, langData) {
 }
 
 function setLanguagePreference(lang) {
-    localStorage.setItem('language', lang);
+    localStorage.setItem('languagePortfolioBrunaNunes', lang);
     location.reload();
+}
+
+function setThemePreference(theme) {
+    localStorage.setItem('themePortfolioBrunaNunes', theme);
 }
 
 async function fetchLanguageData(lang) {
