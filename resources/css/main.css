@@ -457,7 +457,7 @@ body, button {
     order: 2;
   }
 }
-.projects .container .cards .card .card-content h3.project-title {
+.projects .container .cards .card .card-content a.project-title {
   font-size: 24px;
   color: var(--font-color-dark);
 }

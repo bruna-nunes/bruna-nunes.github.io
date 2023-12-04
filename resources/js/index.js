@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
 function changeAssets(mode) {
-    console.log("mode", mode)
     const nameLogo = document.querySelector('[data-observable-mode="name"]')
     nameLogo.src = `./resources/imgs/logo-name-${mode}.svg`;
 
