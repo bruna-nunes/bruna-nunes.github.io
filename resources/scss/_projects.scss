@@ -65,6 +65,10 @@
                     .project-description {
                         font-size: 16px;
                         color: var(--font-color-default);
+
+                        a {
+                            color: var(--font-color-dark);
+                        }
                     }
                 }
 

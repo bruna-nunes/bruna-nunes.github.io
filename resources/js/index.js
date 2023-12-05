@@ -35,6 +35,12 @@ function changeAssets(mode) {
     const profileHero = document.querySelector('[data-observable-mode="profile-hero"]')
     profileHero.src = `./resources/imgs/image-hero-bruna-${mode}.svg`;
 
+    const projectFylo = document.querySelector('[data-observable-mode="project-fylo"]')
+    projectFylo.src = `./resources/imgs/projects/fylo-landing-page-frontendmentor-${mode}.jpg`;
+
+    const projectDashboard = document.querySelector('[data-observable-mode="project-dashboard"]')
+    projectDashboard.src = `./resources/imgs/projects/social-media-dashboard-frontendmentor-project-${mode}.jpg`;
+
     const linkedin = document.querySelectorAll('[data-observable-mode="linkedin"]')
     linkedin[0].src = `./resources/imgs/icons/icon-linkedin-${mode}.svg`;
     linkedin[1].src = `./resources/imgs/icons/icon-linkedin-${mode}.svg`;

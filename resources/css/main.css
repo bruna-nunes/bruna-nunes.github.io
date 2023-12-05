@@ -465,6 +465,9 @@ body, button {
   font-size: 16px;
   color: var(--font-color-default);
 }
+.projects .container .cards .card .card-content .project-description a {
+  color: var(--font-color-dark);
+}
 .projects .container .cards .card img {
   width: auto;
   height: auto;
