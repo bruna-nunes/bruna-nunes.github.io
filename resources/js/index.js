@@ -79,6 +79,9 @@ function updateContent(lang, langData) {
             if (config.typeKey === "alt"){
                 element.alt = langData[config.key]
             }
+            if (config.typeKey === "content"){
+                element.content = langData[config.key]
+            }
         } else {
             element.innerHTML = langData[config.key];
         }
