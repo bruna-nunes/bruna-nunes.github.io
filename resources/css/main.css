@@ -522,9 +522,13 @@ body, button {
     font-size: 16px;
   }
 }
+.main-footer .content .socials {
+  display: flex;
+  gap: 12px;
+}
 .main-footer .content .socials a {
   text-decoration: none;
 }
-.main-footer .content .socials a :hover {
+.main-footer .content .socials :hover {
   transform: scale(1.1);
 }

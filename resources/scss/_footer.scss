@@ -44,8 +44,14 @@
             }
         }
 
-        .socials a {
-            text-decoration: none;
+        .socials {
+            display: flex;
+            gap: 12px;
+
+            a {
+                text-decoration: none;
+            }
+            
 
             :hover {
                 transform: scale(1.1);
