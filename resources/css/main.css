@@ -233,6 +233,8 @@ body, button {
   transform: translateX(30px);
 }
 .header-menu .wrapper .mobile-menu-switch {
+  border: none;
+  background-color: transparent;
   display: none;
 }
 @media (max-width: 991.98px) {
