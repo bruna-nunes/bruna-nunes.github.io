@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruna Nunes - Frontend Developer</title>
+    <title data-i18n='{ "key": "title_site"}'>Bruna Nunes - Desenvolvedora Frontend</title>
+    <meta name="description" content="Portifólio de Bruna Nunes. Desenvolvedora Web Frontend." data-i18n='{ "key": "meta_description_site", "typeKey": "content" }'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -40,9 +41,9 @@
                     <label for="switch-theme"></label>
                 </div>
             </div>
-            <a id="mobile-menu-switch" href="javascript:void(0);" class="mobile-menu-switch" onclick="toggleMenuHeader()">
-                <img src="./resources/imgs/icons/hamburger-menu-light.svg" width="40" height="40" data-observable-mode="switch-hamburguer-menu-icon">
-              </a>
+            <button type="button" id="mobile-menu-switch" class="mobile-menu-switch" onclick="toggleMenuHeader()">
+                <img src="./resources/imgs/icons/hamburger-menu-light.svg" width="40" height="40" data-observable-mode="switch-hamburguer-menu-icon" alt="" data-i18n='{ "key": "alt_mobile_menu_switch", "typeKey": "alt" }'>
+            </button>
         </div>
     </header>
     <main>
@@ -106,7 +107,7 @@
                             <p class="project-description"  data-i18n='{ "key": "project_dashboard_description" }'>
                             </p>
                         </div>
-                        <img src="./resources/imgs/projects/social-media-dashboard-frontendmentor-project.jpg" width="200" height="200" data-i18n='{ "key": "alt_project_dashboard", "typeKey": "alt" }'>
+                        <img src="./resources/imgs/projects/social-media-dashboard-frontendmentor-project.jpg" width="200" height="200" data-i18n='{ "key": "alt_project_dashboard", "typeKey": "alt" }' data-observable-mode="project-dashboard">
                     </div>
                     <div class="card">
                         <div class="card-content">
@@ -114,7 +115,7 @@
                             <p class="project-description" data-i18n='{ "key": "project_lp_description" }'>
                             </p>
                         </div>
-                        <img src="./resources/imgs/projects/fylo-landing-page-frontendmentor.jpg" width="200" height="200" data-i18n='{ "key": "alt_project_lp", "typeKey": "alt" }'>
+                        <img src="./resources/imgs/projects/fylo-landing-page-frontendmentor-light.jpg" width="200" height="200" data-i18n='{ "key": "alt_project_lp", "typeKey": "alt" }' data-observable-mode="project-fylo">
                     </div>
                 </div>
             </div>

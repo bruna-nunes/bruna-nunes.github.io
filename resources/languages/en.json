@@ -1,5 +1,7 @@
 {
     "language": "EN",
+    "title_site": "Bruna Nunes - Frontend Developer",
+    "meta_description_site": "Bruna Nunes portfolio. Frontend Web Developer.",
     "menu_header_home": "Home",
     "menu_header_about": "About",
     "menu_header_projects": "Projects",
@@ -16,6 +18,7 @@
     "project_lp_description": "Landing page with dark theme created to solve a challenge from <a href='https://www.frontendmentor.io/' rel='noreferrer noopener' target='_blank'>Frontendmentor</a>",
     "role": "Frontend Developer",
 
+    "alt_mobile_menu_switch": "Menu opening hamburger menu",
     "alt_photo_header": "Photo of Bruna Nunes",
     "alt_logo_header": "Logo with the name Bruna Nunes",
     "alt_photo_hero": "Illustration of Bruna Nunes",
