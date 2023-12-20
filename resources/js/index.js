@@ -14,13 +14,31 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     
 
-    switcher.addEventListener('change', function(){
-        const mode = htmlPage.classList.toggle('dark-mode') ? 'dark' : 'light'
-        setThemePreference(mode)
-        changeAssets(mode);    
+    switcher.addEventListener('change', changeTheme)
+
+    const switchThemeContent = document.getElementById('switch-theme-content')
+    
+    switchThemeContent.addEventListener('focus', (event) => {
+        window.addEventListener('keypress', changeThemeKeypress)
+    })
+
+    switchThemeContent.addEventListener('blur', (event) => {
+        window.removeEventListener('keypress', changeThemeKeypress)
     })
 });
 
+function changeThemeKeypress(event) {
+    if(event.keyCode === 13) {
+        changeTheme()
+    }
+}
+
+function changeTheme() {
+    const htmlPage = document.querySelector('html');
+    const mode = htmlPage.classList.toggle('dark-mode') ? 'dark' : 'light'
+    setThemePreference(mode)
+    changeAssets(mode);    
+}
 
 function changeAssets(mode) {
     const nameLogo = document.querySelector('[data-observable-mode="name"]')
@@ -55,20 +73,26 @@ function changeAssets(mode) {
 } 
 
 function toggleMenuHeader() {
+    const menuButton = document.getElementById('mobile-menu-switch')
     var navLinks = document.getElementById('nav-menu-links');
     if (navLinks.style.display === 'block') {
         navLinks.style.display = 'none';
+        menuButton.setAttribute('aria-expanded', 'false');
     } else {
         navLinks.style.display = 'block';
+        menuButton.setAttribute('aria-expanded', 'true');
     }
 }
 
 function toggleLangSwitchVisibility(){
+    const languageButton = document.getElementById('switch-language')
     var languagesContent = document.getElementById('langs-content');
     if (languagesContent.style.display === 'flex') {
         languagesContent.style.display = 'none';
+        languageButton.setAttribute('aria-expanded', 'false');
     } else {
         languagesContent.style.display = 'flex';
+        languageButton.setAttribute('aria-expanded', 'true');
     }
 }
 
@@ -78,6 +102,9 @@ function updateContent(lang, langData) {
         if (config.typeKey) {
             if (config.typeKey === "alt"){
                 element.alt = langData[config.key]
+            }
+            if (config.typeKey === "aria-label"){
+                element.ariaLabel = langData[config.key]
             }
             if (config.typeKey === "content"){
                 element.content = langData[config.key]
