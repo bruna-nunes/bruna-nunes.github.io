@@ -70,6 +70,19 @@ body, button {
   display: flex;
   justify-content: center;
 }
+.header-menu .skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.header-menu .skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
 .header-menu .wrapper {
   display: flex;
   align-items: center;

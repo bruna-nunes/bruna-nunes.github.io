@@ -13,6 +13,7 @@
 </head>
 <body>
     <header class="header-menu">
+        <a href="#main" class="skip" data-i18n='{ "key": "skip_text" }'></a>
         <div class="wrapper">
             <div class="profile-title-content">
                 <img src="./resources/imgs/profile.jfif" class="profile" data-i18n='{ "key": "alt_photo_header", "typeKey": "alt" }' width="50" height="50">
@@ -27,8 +28,8 @@
             </nav>
             <div class="switches">
                 <div class="switch-language-content">
-                    <button type="button" onclick="toggleLangSwitchVisibility()" name="switch-language" class="switch-language" id="switch-language">
-                        <img src="./resources/imgs/icons/icon-switch-language-light.svg" width="23" height="23" alt="" data-observable-mode="switch-language-icon">
+                    <button type="button" onclick="toggleLangSwitchVisibility()" name="switch-language" class="switch-language" id="switch-language" aria-expanded="false" data-i18n='{ "key": "change_language_aria_label", "typeKey": "aria-label" }'>
+                        <img src="./resources/imgs/icons/icon-switch-language-light.svg" width="23" height="23" alt="" aria-hidden="true" data-observable-mode="switch-language-icon">
                         <span data-i18n='{ "key": "language" }'></span>
                     </button>
                     <div class="languages" id="langs-content">
@@ -36,20 +37,20 @@
                         <button type="button" onclick="changeLanguage('en')">English</button>  
                     </div>
                 </div>
-                <div class="switch-theme-content">
+                <div class="switch-theme-content" id="switch-theme-content" tabindex="0" data-i18n='{ "key": "change_theme_aria_label", "typeKey": "aria-label" }'>
                     <input id="switch-theme" type="checkbox" class="switch-theme">
                     <label for="switch-theme"></label>
                 </div>
             </div>
-            <button type="button" id="mobile-menu-switch" class="mobile-menu-switch" onclick="toggleMenuHeader()">
+            <button type="button" id="mobile-menu-switch" class="mobile-menu-switch" onclick="toggleMenuHeader()" aria-expanded="false">
                 <img src="./resources/imgs/icons/hamburger-menu-light.svg" width="40" height="40" data-observable-mode="switch-hamburguer-menu-icon" alt="" data-i18n='{ "key": "alt_mobile_menu_switch", "typeKey": "alt" }'>
             </button>
         </div>
     </header>
-    <main>
-        <section class="hero">
+    <main id="main">
+        <section class="hero" id="hero" aria-label="Hero">
             <div class="container wrapper">
-                <img src="./resources/imgs/image-hero-bruna-light.svg" width="138" height="138" data-i18n='{ "key": "alt_photo_hero", "typeKey": "alt" }' data-observable-mode="profile-hero">
+                <img src="./resources/imgs/image-hero-bruna-light.svg" width="138" height="138" data-i18n='{ "key": "alt_photo_hero", "typeKey": "alt" }' data-observable-mode="profile-hero" aria-hidden="true">
                 <h1 class="title" data-i18n='{ "key": "hero_title" }'></h1>
                 <p class="description" data-i18n='{ "key": "hero_description" }'>
                 </p>
@@ -67,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about" aria-label="About">
             <div class="container wrapper">
                 <h2 class="title" data-i18n='{ "key": "about_title" }'></h2>
                 <section class="content">
@@ -97,7 +98,7 @@
                 </section>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects" aria-label="Projects">
             <div class="container wrapper">
                 <h2 class="title" data-i18n='{ "key": "projects_title" }'></h2>
                 <div class="cards">

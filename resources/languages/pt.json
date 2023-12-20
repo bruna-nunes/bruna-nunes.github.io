@@ -1,5 +1,6 @@
 {
     "language": "PT",
+    "skip_text": "Ir para o contéudo principal",
     "title_site": "Bruna Nunes - Desenvolvedora Frontend",
     "meta_description_site": "Bruna Nunes portfolio. Frontend Web Developer.",
     "menu_header_home": "Ínicio",
@@ -19,12 +20,15 @@
     "role": "Desenvolvedora Frontend",
 
     "alt_mobile_menu_switch": "Menu hamburguer de abertura de menu",
-    "alt_photo_header": "Foto de Bruna Nunes",
+    "alt_photo_header": "Foto de Bruna Nunes. Cabelos vermelhos, com óculos redondo.",
     "alt_logo_header": "Logo com o nome Bruna Nunes",
-    "alt_photo_hero": "Ilustração de Bruna Nunes",
+    "alt_photo_hero": "Ilustração de Bruna Nunes. Cabelos vermelhos, óculos e um fundo marrom.",
     "alt_linkedin": "Ir para o LinkedIn",
     "alt_github": "Ir para o GitHub",
     "alt_email": "Enviar email",
-    "alt_project_dashboard": "Imagem demonstrativa do Projeto de Dashboard",
-    "alt_project_lp": "Imagem demonstrativa do Projeto de Landing Page"
+    "alt_project_dashboard": "Imagem demonstrativa do Projeto de Dashboard. Dois prints do projeto, um representando o dark mode e outro light mode. Dashboard com cards coloridos.",
+    "alt_project_lp": "Imagem demonstrativa do Projeto de Landing Page. Dois prints do projeto, um apresentando o inicio da landing page com o hero, seção de características e uma seção com imagem e descrição. O segundo apresentando formulário de contato da página e footer",
+
+    "change_language_aria_label": "Mudar linguagem do site",
+    "change_theme_aria_label": "Mudar tema do site (dark ou light)"
 }
