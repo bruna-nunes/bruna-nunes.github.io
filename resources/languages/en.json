@@ -13,6 +13,8 @@
     "about_title_technologies": "Technologies and experiences",
     "about_description": "Frontend Web Developer.<br>Graduated in Systems Analysis and Development and with experience in building and maintaining the frontend of different digital products, websites, landing pages, platforms and web systems.<br>Focused on modern and consistent technologies and construction of relevant and interactive experiences.<br>Professional in search of constant improvement, day by day.",
     "projects_title": "Projects",
+    "project_blush_title": "Blush Design System",
+    "project_blush_description": "A Design System made in VueJS, created to facilitate, accelerate and standardize the development of interfaces.",
     "project_dashboard_title": "Informative Dashboard",
     "project_dashboard_description": "Social Media Dashboard Interface created to solve a challenge from <a href='https://www.frontendmentor.io/' rel='noreferrer noopener' target='_blank'>Frontendmentor</a>",
     "project_lp_title": "Landing page Fylo",
@@ -26,6 +28,7 @@
     "alt_linkedin": "Go to LinkedIn",
     "alt_github": "Go to GitHub",
     "alt_email": "Send an email",
+    "alt_project_blush": "Demonstrative image of the System Blush Design Project. Two prints of the project, one showing the figma with components and the other showing the documentation home page.",
     "alt_project_dashboard": "Demonstrative image of the Dashboard Project. Two prints of the project, one representing the dark mode and the other light mode. Dashboard with colorful cards.",
     "alt_project_lp": "Demonstrative image of the Landing Page Project. Two prints of the project, one showing the beginning of the landing page with the hero, features section and a section with image and description. The second showing the page's contact form and footer",
 

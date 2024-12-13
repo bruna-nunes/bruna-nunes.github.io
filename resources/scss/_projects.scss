@@ -73,11 +73,15 @@
                 }
 
                 img {
-                    width: auto;
+                    width: 360px;
                     height: auto;
                     border-radius: 10px;
-                    border: 1px solid var(--light-color-01);;
+                    border: 1px solid var(--light-color-01);
                     max-width: 100%;
+
+                    @media (max-width: 767.98px) {
+                        width: 100%;
+                    }
                 }
             }
         }

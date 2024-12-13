@@ -13,6 +13,8 @@
     "about_title_technologies": "Tecnologias e experiências",
     "about_description": "Desenvolvedora Web Frontend.<br>Formada em Análise e Desenvolvimento de Sistemas e com experiência na construção e manutenção do frontend de diferentes produtos digitais, sites, landing pages, plataformas e sistemas web.<br>Focada em tecnologias modernas e consistentes e na construção de experiências relevantes e interativas.<br>Profissional em busca da melhoria constante, dia após dia.",
     "projects_title": "Projetos",
+    "project_blush_title": "Blush Design System",
+    "project_blush_description": "Um Design System criado para facilitar, acelerar e padronizar o desenvolvimento de interfaces.",
     "project_dashboard_title": "Dashboard informativo",
     "project_dashboard_description": "Interface de Dashboard de Social Media criada como resolução de um desafio do <a href='https://www.frontendmentor.io/' rel='noreferrer noopener' target='_blank'>Frontendmentor</a>",
     "project_lp_title": "Landing page Fylo",
@@ -26,6 +28,7 @@
     "alt_linkedin": "Ir para o LinkedIn",
     "alt_github": "Ir para o GitHub",
     "alt_email": "Enviar email",
+    "alt_project_blush": "Imagem demonstrativa do Projeto de Design System Blush. Dois prints do projeto, um mostrando o figma com componentes e outro mostrando a página inicial da documentação.",
     "alt_project_dashboard": "Imagem demonstrativa do Projeto de Dashboard. Dois prints do projeto, um representando o dark mode e outro light mode. Dashboard com cards coloridos.",
     "alt_project_lp": "Imagem demonstrativa do Projeto de Landing Page. Dois prints do projeto, um apresentando o inicio da landing page com o hero, seção de características e uma seção com imagem e descrição. O segundo apresentando formulário de contato da página e footer",
 
