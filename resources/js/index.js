@@ -53,6 +53,9 @@ function changeAssets(mode) {
     const profileHero = document.querySelector('[data-observable-mode="profile-hero"]')
     profileHero.src = `./resources/imgs/image-hero-bruna-${mode}.svg`;
 
+    const projectBlush = document.querySelector('[data-observable-mode="project-blush"]')
+    projectBlush.src = `./resources/imgs/projects/blush-project-${mode}.jpg`;
+
     const projectFylo = document.querySelector('[data-observable-mode="project-fylo"]')
     projectFylo.src = `./resources/imgs/projects/fylo-landing-page-frontendmentor-${mode}.jpg`;
 
